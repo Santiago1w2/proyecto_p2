@@ -1,4 +1,4 @@
-org: sebastianlizarraga
+org: santiagomorales
 service: lms-infrastructure
 
 provider:
@@ -7,7 +7,7 @@ provider:
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
   iam:
-    role: arn:aws:iam::198909467842:role/LabRole
+    role: arn:aws:iam::573505212581:role/LabRole
 
 resources:
   Resources:
@@ -65,7 +65,7 @@ resources:
       Properties:
         TopicArn: !Ref EnrollmentTopic
         Protocol: email
-        Endpoint: sebastian.lizarraga@utec.edu.pe
+        Endpoint: santiago.morales@utec.edu.pe
 
     # SNS → SQS Subscription
     EnrollmentSubscription:
