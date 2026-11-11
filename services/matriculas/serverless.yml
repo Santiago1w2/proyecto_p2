@@ -1,4 +1,4 @@
-org: sebastianlizarraga
+org: santiagomorales
 service: lms-matriculas
 
 provider:
@@ -9,7 +9,7 @@ provider:
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
   iam:
-    role: arn:aws:iam::198909467842:role/LabRole
+    role: arn:aws:iam::573505212581:role/LabRole
   environment:
     TABLE_NAME: lms-enrollments-${sls:stage}
     SNS_TOPIC_ARN: ${cf:lms-infrastructure-${sls:stage}.SnsTopicArn}
